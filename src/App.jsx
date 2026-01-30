@@ -1,7 +1,7 @@
 import React from "react";
-import solderingImage from "./assets/soldering-closeup.JPEG";
-import feetImage from "./assets/pair-of-feet.JPEG";
-import feetImage2 from "./assets/pair-of-feet-2.JPEG";
+import solderingImage from "./assets/soldering-closeup.jpeg";
+import feetImage from "./assets/pair-of-feet.jpeg";
+import feetImage2 from "./assets/pair-of-feet-2.jpeg";
 
 export default function Portfolio() {
   return (
