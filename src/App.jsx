@@ -39,11 +39,12 @@ export default function Portfolio() {
 
           {/* Project text */}
           <p className="text-xs text-zinc-500 italic">
-            Copper wire sculpture, soldered by hand
+            Copper wire sculpture soldered onto a protoboard. From an aerial view, meant to look like a pair of feet. 
           </p>
           <p className="text-zinc-600">
             "A Pair of Feet" is my first project for my creative embedded systems class.
-            It was my first time learning CS where I created a physical object through soldering and bending together wire. The feet are meant to symbolize baby steps 
+            It was an exciting first to create something CS-related that I could hold in my hands -- a physical representation
+            of everything in the past 7 semesters. Thus, the feet are meant to symbolize baby steps 
             towards learning something new. I also thought they were funny. 
           </p>
         </div>
