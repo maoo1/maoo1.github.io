@@ -22,19 +22,19 @@ export default function Portfolio() {
           {/* Project images */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
             <img 
-              src={finalHeart}
+              src={feetImage}
               alt="A Pair of Feet sculpture"
-              className="w-full aspect-[4/5] object-cover rounded-lg border border-zinc-200"
+              className="max-w-2xl w-full space-y-6"
             /> 
             <img
               src={feetImage2}
               alt="A Pair of Feet sculpture, backside"
-              className="w-full aspect-[4/5] object-cover rounded-lg border border-zinc-200"
+              className="max-w-2xl w-full space-y-6"
             />
             <img
               src={solderingImage}
               alt="Soldering close-up"
-              className="w-full aspect-[4/5] object-cover rounded-lg border border-zinc-200"
+              className="max-w-2xl w-full space-y-6"
             />
           </div>
 
@@ -60,7 +60,7 @@ export default function Portfolio() {
             <img 
               src={finalHeart}
               alt="Heart LED pendant lit up"
-              className="w-full aspect-[4/5] object-cover rounded-lg border border-zinc-200"
+              className="max-w-2xl w-full space-y-6"
             />
           </div>
 
