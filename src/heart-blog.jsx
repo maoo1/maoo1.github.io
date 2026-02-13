@@ -8,7 +8,8 @@ export default function HeartBlog() {
   const [err, setErr] = useState("");
 
   useEffect(() => {
-    const url = `${import.meta.env.BASE_URL}blog/heart-heart/heart-heart.md`;
+    // ✅ This matches what your build actually outputs: dist/blog/heart-heart.md
+    const url = `${import.meta.env.BASE_URL}blog/heart-heart.md`;
 
     fetch(url)
       .then((res) => {
