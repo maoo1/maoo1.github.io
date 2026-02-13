@@ -4,36 +4,63 @@ import remarkGfm from "remark-gfm";
 import { Link } from "react-router-dom";
 
 export default function HeartBlog() {
-  const [content, setContent] = useState("");
+  const [content, setContent] = useState(null); // null = loading
   const [err, setErr] = useState("");
 
-    useEffect(() => {
-    fetch(`${import.meta.env.BASE_URL}blog/heart-heart/heart-heart.md`)
-        .then((res) => {
-        if (!res.ok) throw new Error(`Fetch failed: ${res.status} ${res.statusText}`);
+  useEffect(() => {
+    const url = `${import.meta.env.BASE_URL}blog/heart-heart/heart-heart.md`;
+
+    fetch(url)
+      .then((res) => {
+        if (!res.ok) throw new Error(`${res.status} ${res.statusText}`);
         return res.text();
-        })
-        .then(setContent)
-        .catch((err) => console.error(err));
-    }, []);
-    
+      })
+      .then((text) => setContent(text))
+      .catch((e) => {
+        console.error(e);
+        setErr(`Failed to load markdown: ${String(e)} (URL: ${url})`);
+        setContent(""); // stop loading
+      });
+  }, []);
+
   return (
     <main className="min-h-screen bg-white text-zinc-900 px-6 py-20">
       <div className="max-w-3xl mx-auto">
-        <Link to="/" className="text-sm underline mb-10 inline-block hover:text-zinc-600">
+        <Link
+          to="/"
+          className="text-sm underline mb-10 inline-block hover:text-zinc-600"
+        >
           ← Back to portfolio
         </Link>
 
-        {err ? (
+        {content === null ? (
+          <p className="text-zinc-600">Loading…</p>
+        ) : err ? (
           <div className="border border-red-200 bg-red-50 text-red-800 p-4 rounded">
             {err}
           </div>
-        ) : content ? (
-          <article className="prose prose-zinc max-w-none">
-            <ReactMarkdown remarkPlugins={[remarkGfm]}>{content}</ReactMarkdown>
-          </article>
         ) : (
-          <p className="text-zinc-600">Loading…</p>
+          <article className="prose prose-zinc max-w-none">
+            <ReactMarkdown
+              remarkPlugins={[remarkGfm]}
+              components={{
+                img: ({ node, ...props }) => (
+                  <img
+                    {...props}
+                    style={{
+                      maxWidth: "100%",
+                      height: "auto",
+                      borderRadius: 12,
+                      display: "block",
+                    }}
+                    loading="lazy"
+                  />
+                ),
+              }}
+            >
+              {content}
+            </ReactMarkdown>
+          </article>
         )}
       </div>
     </main>
