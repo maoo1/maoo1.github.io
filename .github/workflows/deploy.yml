@@ -27,6 +27,18 @@ jobs:
       - run: npm ci
       - run: npm run build
 
+      # ✅ Drop-in debug: prove the markdown made it into dist/
+      - name: Verify blog markdown exists in dist
+        run: |
+          echo "=== dist contents ==="
+          ls -la dist || true
+          echo "=== dist/blog contents ==="
+          ls -la dist/blog || true
+          echo "=== dist/blog/heart-heart contents ==="
+          ls -la dist/blog/heart-heart || true
+          echo "=== check file ==="
+          test -f dist/blog/heart-heart/heart-heart.md && echo "FOUND dist/blog/heart-heart/heart-heart.md" || (echo "MISSING dist/blog/heart-heart/heart-heart.md" && exit 1)
+
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
