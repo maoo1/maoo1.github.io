@@ -1,18 +1,44 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import ReactMarkdown from "react-markdown";
-import rehypeRaw from "rehype-raw";
-import post from "./blog/heart-heart.md?raw";
+import remarkGfm from "remark-gfm";
+import { Link } from "react-router-dom";
 
 export default function HeartBlog() {
-  return (
-    <main className="max-w-3xl mx-auto px-6 py-24 prose prose-zinc">
-      <a href="/" className="text-sm underline mb-8 inline-block">
-        ← Back to portfolio
-      </a>
+  const [content, setContent] = useState("");
 
-      <ReactMarkdown rehypePlugins={[rehypeRaw]}>
-        {post}
-      </ReactMarkdown>
+  useEffect(() => {
+    fetch(`${import.meta.env.BASE_URL}heart-heart.md`)
+      .then((res) => {
+        if (!res.ok) {
+          throw new Error("Failed to load markdown file.");
+        }
+        return res.text();
+      })
+      .then((text) => setContent(text))
+      .catch((err) => {
+        console.error(err);
+      });
+  }, []);
+
+  return (
+    <main className="min-h-screen bg-white text-zinc-900 px-6 py-20">
+      <div className="max-w-3xl mx-auto">
+
+        <Link
+          to="/"
+          className="text-sm underline mb-10 inline-block hover:text-zinc-600"
+        >
+          ← Back to portfolio
+        </Link>
+
+        <article className="prose prose-zinc max-w-none">
+          <ReactMarkdown remarkPlugins={[remarkGfm]}>
+            {content}
+          </ReactMarkdown>
+        </article>
+
+      </div>
     </main>
   );
 }
+
