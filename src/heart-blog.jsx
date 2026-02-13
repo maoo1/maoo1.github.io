@@ -7,18 +7,16 @@ export default function HeartBlog() {
   const [content, setContent] = useState("");
   const [err, setErr] = useState("");
 
-  useEffect(() => {
-    const url = `${import.meta.env.BASE_URL}heart-heart.md`;
-
-    fetch(url)
-      .then((res) => {
-        if (!res.ok) throw new Error(`Fetch failed: ${res.status} ${res.statusText} (${url})`);
+    useEffect(() => {
+    fetch(`${import.meta.env.BASE_URL}blog/heart-heart/heart-heart.md`)
+        .then((res) => {
+        if (!res.ok) throw new Error(`Fetch failed: ${res.status} ${res.statusText}`);
         return res.text();
-      })
-      .then(setContent)
-      .catch((e) => setErr(String(e)));
-  }, []);
-
+        })
+        .then(setContent)
+        .catch((err) => console.error(err));
+    }, []);
+    
   return (
     <main className="min-h-screen bg-white text-zinc-900 px-6 py-20">
       <div className="max-w-3xl mx-auto">
