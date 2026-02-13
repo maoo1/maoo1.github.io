@@ -2,7 +2,7 @@ import React from "react";
 import solderingImage from "./assets/soldering-closeup.jpeg";
 import feetImage from "./assets/pair-of-feet.jpeg";
 import feetImage2 from "./assets/pair-of-feet-2.jpeg";
-import finalHeart from "./assets/lit_up_heart.jpeg";
+import finalHeart from "./assets/lit_up_heart.jpg";
 
 export default function Portfolio() {
   return (
