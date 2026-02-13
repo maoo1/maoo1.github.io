@@ -2,6 +2,7 @@ import React from "react";
 import solderingImage from "./assets/soldering-closeup.jpeg";
 import feetImage from "./assets/pair-of-feet.jpeg";
 import feetImage2 from "./assets/pair-of-feet-2.jpeg";
+import finalHeart from "./assets/lit_up_heart.jpeg";
 
 export default function Portfolio() {
   return (
@@ -21,10 +22,10 @@ export default function Portfolio() {
           {/* Project images */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
             <img 
-              src={feetImage}
+              src={finalHeart}
               alt="A Pair of Feet sculpture"
               className="w-full aspect-[4/5] object-cover rounded-lg border border-zinc-200"
-            />
+            /> 
             <img
               src={feetImage2}
               alt="A Pair of Feet sculpture, backside"
@@ -47,6 +48,36 @@ export default function Portfolio() {
             of everything in the past 7 semesters. Thus, the feet are meant to symbolize baby steps 
             towards learning something new. I also thought they were funny. 
           </p>
+        </div>
+      </section>
+      {/* Pendant */}
+      <section className="min-h-screen flex justify-center px-6 py-24">
+        <div className="max-w-4xl w-full space-y-6">
+
+          <h2 className="text-2xl font-medium">Heart Heart</h2>
+          {/* Project images */}
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+            <img 
+              src={finalHeart}
+              alt="Heart LED pendant lit up"
+              className="w-full aspect-[4/5] object-cover rounded-lg border border-zinc-200"
+            />
+          </div>
+
+          {/* Project text */}
+          <p className="text-xs text-zinc-500 italic">
+            555 timer circuit LED heart, lit up.
+          </p>
+          <p className="text-zinc-600">
+            "Heart Heart" is my second project for my creative embedded systems class.
+            This was my first time working with a 555 timer circuit or any circuit for that matter.   
+          </p>
+          <a 
+            href="/blog/heart-heart"
+            className="inline-block text-sm text-zinc-900 underline underline-offset-4 hover:text-zinc-700 transition-colors"
+          >
+            Click here for the blog post!
+          </a>
         </div>
       </section>
     </main>
