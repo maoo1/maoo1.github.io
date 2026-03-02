@@ -1,12 +1,13 @@
 # AHHHHH
+---
 
-
-This project utilized an ESP32 TTGO T-Display that displayed a generated visual going "ahhhhh" of varying forms and intensities. Click the image below to watch a video demo: 
+This project utilized an ESP32 TTGO T-Display that displayed a generated visual going "ahhhhh" of varying forms and intensities via. procedural randomness. Click the image below to watch a video demo: 
 
 [![Watch demo](/blog/aah/ahh-still-frame.png)](https://youtube.com/shorts/dEwTF94ChPs)
 
 February was a really busy month, and I had a lot going on. I became swamped with planning multiple events for Chinese New Year and managing all the moving parts was incredibly hard. I was feeling frustrated all the time, and I was looking for some type of release. When I was thinking about this project and what artistic direction I wanted to take, I couldn't help but feel the frustration and craziness from other parts of my life seep in, so I let what I created reflect those exact feelings.
 
+---
 # Thought Process
 
 
@@ -26,9 +27,14 @@ Below are some screenshots of the different screams that were generated:
 ![Scream 3](/blog/ahh/ahh-lower-case.jpg)
 
 
-
+---
 # Reflections
 
 
 I thought it was really interesting exploring this medium as a means of processing my feelings, specifically frustration and anger. Usually, I would just journal or do something physical to release the energy, but sitting there typing on my computer fine-tuning roughly the number of "a's" and "h's" that captured the vibe was really funny and surprisingly helpful in processing some the emotions. Overally, I'm really happy with the way it turned out!
+
+---
+
+For a full technical documentation, see the Github repository:
+[View Technical Documentation on GitHub](https://github.com/maoo1/ahhhhh-in-a-box)
 
