@@ -98,7 +98,7 @@ export default function Portfolio() {
       {/* Project 3 */}
       <section className="flex justify-center px-6 py-20 border-t border-zinc-100">
         <div className="w-full max-w-2xl space-y-6 text-left">
-          <h2 className="text-2xl font-medium">Heart Heart</h2>
+          <h2 className="text-2xl font-medium">Ahh In a Box</h2>
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
             <img
