@@ -12,6 +12,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       <Routes>
         <Route path="/" element={<Portfolio />} />
         <Route path="/blog/heart-heart" element={<HeartBlog />} />
+        <Rout path="/blog/ahh" element={<AhhBlog />} />
       </Routes>
     </HashRouter>
   </React.StrictMode>

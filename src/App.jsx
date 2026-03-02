@@ -69,7 +69,7 @@ export default function Portfolio() {
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
             <img
-              src={scream}
+              src={finalHeart}
               alt="Heart LED pendant lit up"
               className="w-full h-64 sm:h-72 object-cover rounded-lg border border-zinc-200"
               loading="lazy"
@@ -102,7 +102,7 @@ export default function Portfolio() {
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
             <img
-              src={finalHeart}
+              src={scream}
               alt="Scream"
               className="w-full h-64 sm:h-72 object-cover rounded-lg border border-zinc-200"
               loading="lazy"

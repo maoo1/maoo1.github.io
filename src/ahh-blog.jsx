@@ -3,7 +3,7 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { Link } from "react-router-dom";
 
-export default function HeartBlog() {
+export default function AhhBlog() {
   const [content, setContent] = useState(null); // null = loading
   const [err, setErr] = useState("");
 
