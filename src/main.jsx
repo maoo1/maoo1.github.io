@@ -5,6 +5,7 @@ import { HashRouter, Routes, Route } from "react-router-dom";
 import "./index.css";
 import Portfolio from "./App.jsx";
 import HeartBlog from "./heart-blog.jsx";
+import AhhBlog from "./ahh-blog.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
