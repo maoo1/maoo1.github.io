@@ -5,6 +5,7 @@ import solderingImage from "./assets/soldering-closeup.jpeg";
 import feetImage from "./assets/pair-of-feet.jpeg";
 import feetImage2 from "./assets/pair-of-feet-2.jpeg";
 import finalHeart from "./assets/lit_up_heart-portfolio.jpg";
+import scream from "./assets/ahh-still-frame.jpg";
 
 function ImageGrid({ images }) {
   return (
@@ -68,7 +69,7 @@ export default function Portfolio() {
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
             <img
-              src={finalHeart}
+              src={scream}
               alt="Heart LED pendant lit up"
               className="w-full h-64 sm:h-72 object-cover rounded-lg border border-zinc-200"
               loading="lazy"
@@ -87,6 +88,37 @@ export default function Portfolio() {
 
           <Link
             to="/blog/heart-heart"
+            className="inline-block text-sm text-zinc-900 underline underline-offset-4 hover:text-zinc-700 transition-colors"
+          >
+            Click here for the blog post!
+          </Link>
+        </div>
+      </section>
+
+      {/* Project 3 */}
+      <section className="flex justify-center px-6 py-20 border-t border-zinc-100">
+        <div className="w-full max-w-2xl space-y-6 text-left">
+          <h2 className="text-2xl font-medium">Heart Heart</h2>
+
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+            <img
+              src={finalHeart}
+              alt="Scream"
+              className="w-full h-64 sm:h-72 object-cover rounded-lg border border-zinc-200"
+              loading="lazy"
+            />
+          </div>
+
+          <p className="text-xs text-zinc-500 italic">
+            ESP32 TTGO T-Display and generative text.
+          </p>
+
+          <p className="text-zinc-600 leading-relaxed">
+            "Ahh" is a project that explores generative text and capturing the feeling of frustration. 
+          </p>
+
+          <Link
+            to="/blog/ahh"
             className="inline-block text-sm text-zinc-900 underline underline-offset-4 hover:text-zinc-700 transition-colors"
           >
             Click here for the blog post!
