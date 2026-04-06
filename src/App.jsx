@@ -6,6 +6,7 @@ import feetImage from "./assets/pair-of-feet.jpeg";
 import feetImage2 from "./assets/pair-of-feet-2.jpeg";
 import finalHeart from "./assets/lit_up_heart-portfolio.jpg";
 import scream from "./assets/ahh-still-frame-2.jpg";
+import lionDanceDrum from "./assets/copper-lion-dance-drum.jpeg";
 
 function ImageGrid({ images }) {
   return (
@@ -122,6 +123,37 @@ export default function Portfolio() {
             className="inline-block text-sm text-zinc-900 underline underline-offset-4 hover:text-zinc-700 transition-colors"
           >
             Click here for the blog post!
+          </Link>
+        </div>
+      </section>
+      {/* Project 4: Drum Pad */}
+      <section className="flex justify-center px-6 py-20 border-t border-zinc-100">
+        <div className="w-full max-w-2xl space-y-6 text-left">
+          <h2 className="text-2xl font-medium">Lion Dance Drum</h2>
+
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+            <img
+              src={lionDanceDrum}
+              alt="Scream"
+              className="w-full h-64 sm:h-72 object-cover rounded-lg border border-zinc-200"
+              loading="lazy"
+            />
+          </div>
+
+          <p className="text-xs text-zinc-500 italic">
+            Cardboard, copper tape, and ESP32 capacitive sensing.
+          </p>
+
+          <p className="text-zinc-600 leading-relaxed">
+            A digital-physical hybrid instrument that translates the nuances of touch into sound 
+            using custom adaptive thresholding and UDP networking.
+          </p>
+
+          <Link
+            to="/blog/drum-pad"
+            className="inline-block text-sm text-zinc-900 underline underline-offset-4 hover:text-zinc-700 transition-colors"
+          >
+            Read about the adaptive baseline logic here.
           </Link>
         </div>
       </section>
