@@ -104,7 +104,7 @@ export default function DrumBlog() {
 
         {/* Footer */}
         <footer className="pt-10 border-t border-zinc-100 text-zinc-400 text-xs">
-          Built with ESP32, Python, and a lot of copper tape.
+            <a href="https://github.com/maoo1/drum-pad" className="text-blue-600 underline">GitHub Repository</a>
         </footer>
       </div>
     </main>
