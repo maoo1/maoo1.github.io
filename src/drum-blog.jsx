@@ -32,8 +32,6 @@ export default function DrumBlog() {
           ></iframe>
         </div>
 
-        <img src={drumCreation} className="w-full rounded-lg border border-zinc-200" alt="Finished Drum" />
-
         {/* The Story */}
         <article className="space-y-6 text-zinc-600 leading-relaxed text-left">
           <h2 className="text-xl font-medium text-zinc-900">The Concept</h2>
@@ -55,7 +53,10 @@ export default function DrumBlog() {
             thing a 3D, more authentic feel. The sounds themselves were recorded from an actual lion dance drum, and I used Audacity to edit them to make them sound cleaner and avoid
             issues of clipping and latency as much as possible. 
 
+            <br></br>
             <img src={drumReal} className="w-full rounded-lg border border-zinc-200" alt="Real Lion Dance Drum" />
+            This is what a real lion dance drum looks like!
+            <br></br>
 
             Data is sent from the ESP32 over Wi-Fi using the UDP protocol. On the laptop side, 
             a Python script listens for these messages and triggers low-latency audio samples. 
@@ -65,7 +66,10 @@ export default function DrumBlog() {
             Additionally, because a mode switch was necessary, I also thought it would be fun to do cymbals as well, another instrument key in a lion dance performance. So, 
             when the 5th pad is hit, it toggles the mode of the instrument between drum and cymbal, with the sounds of the other pads respectively varying. 
 
+            <br></br>
             <img src={drumCreation} className="w-full rounded-lg border border-zinc-200" alt="Drum Finished Product" />
+            This is what my drum looked like!
+            <br></br>
 
             The biggest hurdle were the stupid sensors themselves. The initial code itself was relatively straightforward, and I managed to get it done pretty quickly. However, 
             I soon found out that the sensors were EXTREMELY inconsistent and sensitive, and I found a myriad of issues that I couldn't really explain. For example, although I'm using Wi-Fi to transmit
@@ -79,27 +83,22 @@ export default function DrumBlog() {
             in consistencies, I found myself in a debugging hell, messing with all the thresholds
             of the sensors for literally hours. This was what I was staring at for the longest time:
 
+            <br></br>
+            <img src={debugHell} className="w-full rounded-lg border border-zinc-200" alt="Debugging Hell" />
+            I was literally staring at these numbers for hours, trying to find a pattern in the inconsistencies.
+            <br></br>
+
             After a while, I managed to implement an adaptive baseline algorithm, where the baseline for calculating
             a significant touch was constantly shifting in order to account for the difference in environment and noise. This allowed for some flexibility, 
             but I ultimately still had to really fine-tune the thresholds until it worked to a consistent level that
             I didn't feel like it was a fluke to turn in lol. Even now, when I start it up, the sensors are still a little wonky, 
             so I had to mess with the thresholds to get it working. 
-            
-            The biggest hurdle was <strong>capacitance drift</strong>. I discovered that the values 
-            shifted depending on whether the drum was sitting on a wooden table or being held in 
-            the air. Even the proximity of a ground plane (copper paper) nearly silenced Pad B 
-            by creating too much parasitic capacitance.
 
+            <br></br>
             <img src={drumBack} className="w-full rounded-lg border border-zinc-200" alt="Drum Wiring" />
-            <img src={debugHell} className="w-full rounded-lg border border-zinc-200" alt="Debugging Hell" />
+            This is what the back of my drum looked like with all the wires and the ESP32. 
+            <br></br>
         </p>
-          <h2 className="text-xl font-medium text-zinc-900">Sonification via UDP</h2>
-          <p>
-            Data is sent from the ESP32 over Wi-Fi using the UDP protocol. On the laptop side, 
-            a Python script listens for these messages and triggers low-latency audio samples. 
-            This separation allows the ESP32 to focus entirely on sensor precision while the 
-            laptop handles the "media generation."
-          </p>
         </article>
 
         {/* Footer */}
