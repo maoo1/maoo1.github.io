@@ -31,6 +31,7 @@ export default function DrumBlog() {
             allowFullScreen
           ></iframe>
         </div>
+        If the video doesn't load, you can also view it <a href="https://youtube.com/shorts/ytiWJN3CaZE?si=L8KfkLztBnli5JSN" className="text-blue-600 underline">here</a>.
 
         {/* The Story */}
         <article className="space-y-6 text-zinc-600 leading-relaxed text-left">
