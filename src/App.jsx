@@ -6,7 +6,7 @@ import feetImage from "./assets/pair-of-feet.jpeg";
 import feetImage2 from "./assets/pair-of-feet-2.jpeg";
 import finalHeart from "./assets/lit_up_heart-portfolio.jpg";
 import scream from "./assets/ahh-still-frame-2.jpg";
-import lionDanceDrum from "./assets/copper-lion-dance-drum.jpeg";
+import lionDanceDrum from "./assets/copper-lion-dance-drum.jpg";
 
 function ImageGrid({ images }) {
   return (

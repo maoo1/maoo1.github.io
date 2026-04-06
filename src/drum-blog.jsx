@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import drumCreation from "./assets/copper-lion-dance-drum.jpeg";
-import drumReal from "./assets/lion-dance-drum.jpeg";
-import drumBack from "./assets/back-setup.jpeg";
-import debugHell from "./assets/debug-hell.jpeg";
+import drumCreation from "./assets/copper-lion-dance-drum.jpg";
+import drumReal from "./assets/lion-dance-drum.jpg";
+import drumBack from "./assets/back-setup.jpg";
+import debugHell from "./assets/debug-hell.jpg";
 
 export default function DrumBlog() {
   return (
