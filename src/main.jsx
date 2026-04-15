@@ -7,6 +7,7 @@ import Portfolio from "./App.jsx";
 import HeartBlog from "./heart-blog.jsx";
 import AhhBlog from "./ahh-blog.jsx";
 import DrumBlog from "./drum-blog.jsx";
+import NoiseBlog from "./noises-blog.jsx"
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -16,6 +17,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="/blog/heart-heart" element={<HeartBlog />} />
         <Route path="/blog/ahh" element={<AhhBlog />} />
         <Route path="/blog/drum-pad" element={<DrumBlog />} />
+        <Route path="/blog/noises" element={<NoiseBlog />} />
       </Routes>
     </HashRouter>
   </React.StrictMode>
