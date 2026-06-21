@@ -1,24 +1,10 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import { HashRouter, Routes, Route } from "react-router-dom";
-
-import "./index.css";
-import Portfolio from "./App.jsx";
-import HeartBlog from "./heart-blog.jsx";
-import AhhBlog from "./ahh-blog.jsx";
-import DrumBlog from "./drum-blog.jsx";
-import NoiseBlog from "./noises-blog.jsx"
+import React from "react"
+import ReactDOM from "react-dom/client"
+import "./index.css"
+import App from "./App.jsx"
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <HashRouter>
-      <Routes>
-        <Route path="/" element={<Portfolio />} />
-        <Route path="/blog/heart-heart" element={<HeartBlog />} />
-        <Route path="/blog/ahh" element={<AhhBlog />} />
-        <Route path="/blog/drum-pad" element={<DrumBlog />} />
-        <Route path="/noises-blog" element={<NoiseBlog />} />
-      </Routes>
-    </HashRouter>
+    <App />
   </React.StrictMode>
-);
+)

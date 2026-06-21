@@ -1,0 +1,32 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+
+    font-size: 1.7em;
+}
+
+.nav-right {
+    display: flex;
+    justify-content: space-between;  
+}
+
+.nav-left {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-playground {
+    padding: 0 1em;
+}
+
+a {
+    font-family: serif;
+    color: black;
+    text-decoration: underline;
+    transition: 300ms;
+}
+
+a:hover {
+    color: rgba(0, 0, 0, .65);
+}

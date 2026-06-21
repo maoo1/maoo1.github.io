@@ -1,0 +1,117 @@
+.contact-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+
+    padding: 1em;
+    width: 450px;
+    max-width: 600px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 1em;
+}
+
+.contact-title p {
+    font-weight: 300;
+    font-size: 1em;
+    text-align: center;
+}
+
+.contact-x {
+    position: absolute;
+    right: 0;
+    color: rgba(0, 0, 0, 0.4);
+    font-size: .8em;
+    cursor: pointer;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-email, .form-subject {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3em;
+}
+
+label {
+    font-size: 1em;
+}
+
+input[type="email"],
+input[type="text"],
+textarea {
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    outline: none;
+    padding: 0.4em 0;
+    font-size: 0.95em;
+    width: 100%;
+    background: transparent;
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.75em;
+}
+
+input[type="button"],
+input[type="submit"] {
+    padding: 0.5em 1.5em;
+    border-radius: 999px;
+    border: none;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+input[type="button"] {
+    background-color: rgba(0, 0, 0, 0.08);
+}
+
+input[type="submit"] {
+    background-color: black;
+    color: white;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.6);
+}
+
+.form-buttons {
+    align-items: center;
+}
+
+.status-success {
+    color: green;
+    font-size: 0.85em;
+}
+
+.status-error {
+    color: red;
+    font-size: 0.85em;
+}

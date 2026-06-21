@@ -1,0 +1,25 @@
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 4em;
+    padding: 6em;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.headshot img {
+    width: 25vw;
+    height: 30vw;
+    object-fit: cover;
+}
+
+.bio {
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
+.contact-link {
+    cursor: pointer;
+    text-decoration: underline;
+}
