@@ -1,4 +1,4 @@
-import { PlaygroundCardImage, PlaygroundCardIFrame } from "../components/PlaygroundCard.jsx";
+import { PlaygroundCardImage, PlaygroundCardIFrame, PlaygroundCardVideo } from "../components/PlaygroundCard.jsx";
 
 import "../style/Playground.css";
 
@@ -7,6 +7,9 @@ import Feet from "../assets/misc-hardware/pair-of-feet.png";
 import Feet2 from "../assets/misc-hardware/pair-of-feet-closeup.JPEG";
 import Heart from "../assets/misc-hardware/heart-pendant-led.JPEG";
 import HeartSchematic from "../assets/misc-hardware/heart-pendant-schematic.png";
+
+// videos
+import ScreamVideo from "../assets/ahh/ahh-video.mp4";
 
 
 
@@ -18,6 +21,19 @@ export default function Playground() {
                 Some are complete while others are still in the works, but I'd like to share them all!</p>
             </div>
             <div className="playground-grid">
+                <div className="playground-item">
+                    <PlaygroundCardVideo
+                        video={ScreamVideo}
+                        desc="Scream in a Box - emotions through a generative scream at 60 FPS."
+                    />
+                </div>
+                <div className="playground-item">
+                    <PlaygroundCardIFrame
+                        src="https://maoo1.github.io/keyboard-cat/"
+                        desc="Try typing with the first and third row of the keyboard. Project I did
+                            to learn about web audio, from ADSR envelopes to different frequency synthesis."
+                    />
+                </div>
                 <div className="playground-item">
                     <PlaygroundCardImage
                         image={Feet}

@@ -34,6 +34,18 @@
     display: block;
 }
 
+.playground-card iframe {
+    width: 100%;
+    height: 250px;
+    display: block;
+}
+
+.playground-card video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
 .playground-card-desc {
     font-size: 1.1em;
     font-weight: 500;

@@ -9,6 +9,11 @@ import Playground from "./components/Playground.jsx";
 import Footer from "./components/Footer.jsx";
 import Contact from "./components/Contact.jsx";
 
+// specific projects
+import Meownet from "./components/Projects/Meownet.jsx";
+import MagicTiles from "./components/Projects/MagicTiles.jsx";
+import PigeonPal from "./components/Projects/PigeonPal.jsx";
+
 export default function App() {
 
   const [isOpen, setIsOpen] = useState(false);
@@ -23,6 +28,10 @@ export default function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About toggleContact={toggleContact} />} />
             <Route path="/playground" element={<Playground />} />
+            /* specific project routes */
+            <Route path="/projects/meownet" element={<Meownet />} />
+            <Route path="/projects/magic-tiles" element={<MagicTiles />} />
+            <Route path="/projects/pigeon-pal" element={<PigeonPal />} />
           </Routes>
         </div>
         {isOpen && <Contact toggleContact={toggleContact} />}

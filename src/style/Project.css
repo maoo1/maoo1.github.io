@@ -40,3 +40,103 @@
     gap: .6em;
     margin-top: .2em;
 }
+
+/* style for specific project pages */
+.magic-tiles, .pigeon-pal{
+    gap: 3em;
+    padding: 2em;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: flex-start;
+}
+
+.magic-tiles-overview, .pigeon-pal-overview{
+    display: flex;
+    gap: 3em;
+    align-items: flex-start;
+}
+
+.pigeon-pal-custom-animations {
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+    margin-top: 1em;
+}
+
+.pigeon-demo-animations {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+}
+
+.pigeon-demo-animations img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.video-demo {
+    flex: 1;
+    top: 4em;
+}
+
+.video-demo iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: none;
+}
+
+.project-bio {
+    flex: 1;
+}
+
+.project-title h1 {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 0.3em;
+}
+
+.project-context p {
+    font-size: 1em;
+    line-height: 1.7;
+    margin-bottom: .3em;
+}
+
+.project-technicals h3 {
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-top: 1em;
+    margin-bottom: 0.3em;
+}
+
+.project-technicals p {
+    font-size: 1;
+    line-height: 1.7;
+}
+
+.project-github {
+    font-size: 1;
+    margin-top: 1em;
+}
+
+.project-tryout {
+    margin-top: 4em;
+}
+
+.project-tryout h3 {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-bottom: 1.2em;
+}
+
+.project-tryout h2 {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-bottom: 1.2em;
+}
+
+.project-tryout iframe {
+    width: 100%;
+    height: 600px;
+    border: none;
+}

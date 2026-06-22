@@ -12,7 +12,7 @@ export default function Footer({ toggleContact }) {
                 <a href="https://github.com/maoo1" target="_blank" rel="noopener noreferrer">
                     <FaGithub />
                 </a>
-                <a href="https://www.linkedin.com/in/maoo1" target="_blank" rel="noopener noreferrer">
+                <a href="https:www.linkedin.com/in/madeline-ou" target="_blank" rel="noopener noreferrer">
                     <FaLinkedinIn />
                 </a>
                 <MdMailOutline 
