@@ -1,0 +1,168 @@
+.thirsty-lions {
+    padding: 4em;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* overview: video left, bio right */
+.thirsty-lions-overview {
+    display: flex;
+    gap: 3em;
+    align-items: flex-start;
+    margin-bottom: 4em;
+}
+
+.thirsty-lions-overview .video-demo {
+    flex: 1;
+    position: sticky;
+    top: 4em;
+}
+
+.thirsty-lions-overview .video-demo iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: none;
+}
+
+.thirsty-lions-overview .project-bio {
+    flex: 1;
+}
+
+.thirsty-lions-overview .project-title h1 {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 0.3em;
+}
+
+.thirsty-lions-overview .project-context p {
+    font-size: 1;
+    line-height: 1.7;
+    margin-bottom: 1em;
+}
+
+/* technical sections */
+.thirsty-lions .project-technicals {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding-top: 3em;
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+}
+
+.thirsty-lions .technical-section h3 {
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-bottom: 1em;
+}
+
+.thirsty-lions .technical-section h4 {
+    font-size: 1em;
+    font-weight: 600;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.thirsty-lions .technical-section p {
+    font-size: 1;
+    line-height: 1.7;
+    margin-bottom: 1em;
+}
+
+.thirsty-lions .technical-section > img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin: 1em 0;
+}
+
+/* image grids */
+.thirsty-lions .technical-image-grid,
+.thirsty-lions .technical-img-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1em;
+    margin: 1em 0;
+}
+
+.thirsty-lions .technical-image-grid img,
+.thirsty-lions .technical-img-grid img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.thirsty-lions figure {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.thirsty-lions figcaption,
+.poster-caption {
+    font-size: 0.8em;
+    color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+}
+
+.thirsty-lions .project-github {
+    margin-top: 2em;
+}
+
+.thirsty-lions .project-github a {
+    font-size: 1;
+    color: black;
+    text-decoration: underline;
+}
+
+.technical-img-poster figure {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5em;
+    align-items: flex-start;
+}
+
+.technical-img-poster img {
+    width: 30%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 4px;
+}
+
+.technical-img-poster figcaption {
+    width: 100%;
+    font-size: 0.8em;
+    color: rgba(0, 0, 0, 0.4);
+    text-align: center;
+    margin-top: 0.5em;
+}
+
+.technical-img-mockups {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    margin: 1em 0;
+    overflow-x: auto;
+}
+
+.technical-img-mockups figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+    flex-shrink: 0;
+}
+
+.technical-img-mockups img {
+    height: 300px;
+    width: auto;
+    object-fit: contain;
+    border-radius: 4px;
+}
+
+.technical-img-mockups figcaption {
+    font-size: 0.8em;
+    color: rgba(0, 0, 0, 0.4);
+    text-align: center;
+}

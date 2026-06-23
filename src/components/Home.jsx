@@ -43,7 +43,7 @@ export default function Home() {
                 desc="Collaborative project to find the best water fountains on campus. Click to learn more about the 
                     design process!"
                 stack={["Figma", "React", "Firebase" ]}
-                link="#"
+                link="/projects/thirsty-lions"
             />
             <ProjectCard 
                 preview={LionDanceDrum}
