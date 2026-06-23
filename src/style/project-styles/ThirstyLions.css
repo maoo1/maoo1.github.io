@@ -64,7 +64,7 @@
 }
 
 .thirsty-lions .technical-section p {
-    font-size: 1;
+    font-size: 1em;
     line-height: 1.7;
     margin-bottom: 1em;
 }
@@ -111,7 +111,7 @@
 }
 
 .thirsty-lions .project-github a {
-    font-size: 1;
+    font-size: 1em;
     color: black;
     text-decoration: underline;
 }

@@ -132,12 +132,12 @@
 }
 
 .project-technicals p {
-    font-size: 1;
+    font-size: 1em;
     line-height: 1.7;
 }
 
 .project-github {
-    font-size: 1;
+    font-size: 1em;
     margin-top: 1em;
 }
 
