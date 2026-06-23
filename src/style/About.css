@@ -9,14 +9,19 @@
 }
 
 .headshot img {
-    width: 25vw;
+    width: 450px;;
     height: 30vw;
     object-fit: cover;
 }
 
 .bio {
+    flex: 1;
     font-size: 1.1em;
     line-height: 1.8;
+}
+
+.headshot {
+    flex-shrink: 0;
 }
 
 .contact-link {

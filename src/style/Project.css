@@ -42,7 +42,8 @@
 }
 
 /* style for specific project pages */
-.magic-tiles, .pigeon-pal{
+.magic-tiles, .pigeon-pal, 
+.lion-dance-drum {
     gap: 3em;
     padding: 2em;
     max-width: 1200px;
@@ -50,7 +51,8 @@
     align-items: flex-start;
 }
 
-.magic-tiles-overview, .pigeon-pal-overview{
+.magic-tiles-overview, .pigeon-pal-overview, 
+.lion-dance-drum-overview {
     display: flex;
     gap: 3em;
     align-items: flex-start;
@@ -73,6 +75,26 @@
     width: 100%;
     height: auto;
     border-radius: 4px;
+}
+
+.lion-dance-video {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+    margin-top: 1em;
+}
+
+.lion-dance-video iframe {
+    width: 100%;
+    aspect-ratio: 16/9;
+    border: none;
+    height: auto !important;
+}
+
+.lion-dance-video p {
+    font-size: 0.8em;
+    color: rgba(0, 0, 0, 0.4);
+    text-align: center;
 }
 
 .video-demo {

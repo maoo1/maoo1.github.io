@@ -14,6 +14,7 @@ import Meownet from "./components/Projects/Meownet.jsx";
 import MagicTiles from "./components/Projects/MagicTiles.jsx";
 import PigeonPal from "./components/Projects/PigeonPal.jsx";
 import ThirstyLions from "./components/Projects/ThirstyLions.jsx";
+import LionDanceDrum from "./components/Projects/LionDanceDrum.jsx";
 
 export default function App() {
 
@@ -34,6 +35,7 @@ export default function App() {
             <Route path="/projects/magic-tiles" element={<MagicTiles />} />
             <Route path="/projects/pigeon-pal" element={<PigeonPal />} />
             <Route path="/projects/thirsty-lions" element={<ThirstyLions />} />
+            <Route path="/projects/lion-dance-drum" element={<LionDanceDrum />} />
           </Routes>
         </div>
         {isOpen && <Contact toggleContact={toggleContact} />}

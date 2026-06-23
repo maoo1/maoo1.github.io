@@ -50,7 +50,7 @@ export default function Home() {
                 name="Lion Dance Drum"
                 desc="A cardboard drum that mimics a real life lion dance drum via. capacitative touch."
                 stack={["ESP32", "Arduino", "Python", "C+"]}
-                link="#"
+                link="/projects/lion-dance-drum"
             />
             <ProjectCard 
                 preview={MemeProp}
