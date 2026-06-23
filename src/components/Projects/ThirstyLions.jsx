@@ -31,7 +31,10 @@ export default function ThirstyLions() {
         <div className="thirsty-lions">
             <div className="thirsty-lions-overview">
                 <div className="video-demo">
-
+                    <iframe
+                        src="https://www.youtube.com/embed/w2c-_dtpWic"
+                        allowFullScreen
+                    />
                 </div>
                 <div className="project-bio">
                     <div className="project-title">
