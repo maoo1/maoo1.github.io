@@ -3,7 +3,7 @@ import "../../style/project-styles/Meownet.css";
 import MeownetMisc from "../../assets/meownet-images/meownet-3D-prints.jpg";
 import MeownetChannels from "../../assets/meownet-images/meownet-copper-channels.jpg";
 import MeownetEye from "../../assets/meownet-images/meownet-eye.JPEG";
-import MeownetMotors from "../../assets/meownet-images/meownet-motors-and-wires.JPG";
+import MeownetMotors from "../../assets/meownet-images/meownet-motors-and-wires.jpg";
 import MeownetWiring from "../../assets/meownet-images/meownet-back-wiring.jpg";
 export default function Meownet() {
     return (
